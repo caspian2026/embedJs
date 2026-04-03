@@ -3,8 +3,8 @@
     "version": "0.1.37",
     "description": "Web page loader for embedjs",
     "dependencies": {
-        ""@caspian2026/embedjs-interfaces": "0.1.37",
-        ""@caspian2026/embedjs-utils": "0.1.37",
+        "@caspian2026/embedjs-interfaces": "0.1.37",
+        "@caspian2026/embedjs-utils": "0.1.37",
         "@langchain/textsplitters": "^0.1.0",
         "debug": "^4.4.0",
         "html-to-text": "^9.0.5",

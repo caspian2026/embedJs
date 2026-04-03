@@ -3,7 +3,7 @@
     "version": "0.1.37",
     "description": "Useful util functions when extending the embedjs ecosystem",
     "dependencies": {
-        ""@caspian2026/embedjs-interfaces": "0.1.37"
+        "@caspian2026/embedjs-interfaces": "0.1.37"
     },
     "type": "module",
     "main": "./src/index.js",

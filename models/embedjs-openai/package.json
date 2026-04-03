@@ -3,7 +3,7 @@
     "version": "0.1.37",
     "description": "Enable usage of OpenAI models with embedjs",
     "dependencies": {
-        ""@caspian2026/embedjs-interfaces": "0.1.37",
+        "@caspian2026/embedjs-interfaces": "0.1.37",
         "@langchain/core": "^0.3.26",
         "@langchain/openai": "^0.3.16",
         "debug": "^4.4.0"
