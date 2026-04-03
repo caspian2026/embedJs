@@ -1,7 +1,7 @@
 import createDebugMessages from 'debug';
 import { ChatAnthropic } from '@langchain/anthropic';
 import { HumanMessage, AIMessage, SystemMessage } from '@langchain/core/messages';
-import { BaseModel, ModelResponse } from '@cherrystudio/embedjs-interfaces';
+import { BaseModel, ModelResponse } from '@caspian2026/embedjs-interfaces';
 
 export class Anthropic extends BaseModel {
     private readonly debug = createDebugMessages('embedjs:model:Anthropic');

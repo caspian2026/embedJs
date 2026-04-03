@@ -13,12 +13,12 @@ The `deleteLoader()` method allows you to delete the data loaded by a loader pre
 ### Usage
 
 ```ts
-import { RAGApplicationBuilder } from '@cherrystudio/embedjs';
-import { OpenAiEmbeddings } from '@cherrystudio/embedjs-openai';
-import { HNSWDb } from '@cherrystudio/embedjs-hnswlib';
-import { RedisStore } from '@cherrystudio/embedjs-redis';
-import { WebLoader } from '@cherrystudio/embedjs-loader-web';
-import { SitemapLoader } from '@cherrystudio/embedjs-loader-sitemap';
+import { RAGApplicationBuilder } from '@caspian2026/embedjs';
+import { OpenAiEmbeddings } from '@caspian2026/embedjs-openai';
+import { HNSWDb } from '@caspian2026/embedjs-hnswlib';
+import { RedisStore } from '@caspian2026/embedjs-redis';
+import { WebLoader } from '@caspian2026/embedjs-loader-web';
+import { SitemapLoader } from '@caspian2026/embedjs-loader-sitemap';
 
 const app = await new RAGApplicationBuilder()
 .setModel(SIMPLE_MODELS.OPENAI_GPT4_O)

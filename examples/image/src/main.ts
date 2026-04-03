@@ -1,9 +1,9 @@
 import 'dotenv/config';
 import path from 'node:path';
-import { RAGApplicationBuilder, SIMPLE_MODELS } from '@cherrystudio/embedjs';
-import { ImageLoader } from '@cherrystudio/embedjs-loader-image';
-import { OpenAiEmbeddings } from '@cherrystudio/embedjs-openai';
-import { HNSWDb } from '@cherrystudio/embedjs-hnswlib';
+import { RAGApplicationBuilder, SIMPLE_MODELS } from '@caspian2026/embedjs';
+import { ImageLoader } from '@caspian2026/embedjs-loader-image';
+import { OpenAiEmbeddings } from '@caspian2026/embedjs-openai';
+import { HNSWDb } from '@caspian2026/embedjs-hnswlib';
 
 const ragApplication = await new RAGApplicationBuilder()
     .setModel(SIMPLE_MODELS.OPENAI_GPT4_O)

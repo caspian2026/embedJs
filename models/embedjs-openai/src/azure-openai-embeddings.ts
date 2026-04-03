@@ -1,5 +1,5 @@
 import { AzureOpenAIEmbeddings as LangchainAzureOpenAiEmbeddings } from '@langchain/openai';
-import { BaseEmbeddings } from '@cherrystudio/embedjs-interfaces';
+import { BaseEmbeddings } from '@caspian2026/embedjs-interfaces';
 
 export class AzureOpenAiEmbeddings extends BaseEmbeddings {
     private model: LangchainAzureOpenAiEmbeddings;

@@ -1,5 +1,5 @@
 import { HuggingFaceInferenceEmbeddings } from '@langchain/community/embeddings/hf';
-import { BaseEmbeddings } from '@cherrystudio/embedjs-interfaces';
+import { BaseEmbeddings } from '@caspian2026/embedjs-interfaces';
 
 export class HuggingFaceEmbeddings extends BaseEmbeddings {
     private model: HuggingFaceInferenceEmbeddings;

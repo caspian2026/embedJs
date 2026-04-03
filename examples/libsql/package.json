@@ -1,5 +1,5 @@
 {
-    "name": "@cherrystudio/embedjs-examples-libsql",
+    "name": "@caspian2026/embedjs-examples-libsql",
     "version": "0.1.1",
     "type": "module",
     "dependencies": {

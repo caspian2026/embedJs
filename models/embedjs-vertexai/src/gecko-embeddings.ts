@@ -1,5 +1,5 @@
 import { VertexAIEmbeddings } from '@langchain/google-vertexai';
-import { BaseEmbeddings } from '@cherrystudio/embedjs-interfaces';
+import { BaseEmbeddings } from '@caspian2026/embedjs-interfaces';
 
 export class GeckoEmbeddings extends BaseEmbeddings {
     private model: VertexAIEmbeddings;
