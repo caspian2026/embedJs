@@ -4,9 +4,6 @@ on:
     release:
         types: [published]
 
-env:
-    NX_CLOUD_ACCESS_TOKEN: ${{ secrets.NX_CLOUD_ACCESS_TOKEN }}
-
 jobs:
     publish:
         name: Publish
@@ -25,18 +22,24 @@ jobs:
               uses: actions/setup-node@v4
               with:
                   node-version: 22
-
-            - name: Configure npm auth
-              run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_ACCESS_TOKEN }}" > ~/.npmrc
+                  registry-url: https://registry.npmjs.org/
 
             - name: Verify npm auth
               run: npm whoami
+              env:
+                  NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
             - name: Install dependencies
               run: npm install --legacy-peer-deps
+              env:
+                  NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
             - name: Build packages
               run: npm run build:esm
+              env:
+                  NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
             - name: Publish packages
               run: npx nx release publish --ver=${{ github.ref_name }}
+              env:
+                  NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
