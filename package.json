@@ -9,7 +9,7 @@
     "homepage": "https://github.com/caspian2026/embedJs#readme",
     "version": "0.1.34",
     "scripts": {
-        "build:esm": "nx run-many --t=build",
+        "build:esm": "nx run-many --t=build --exclude='examples/*'",
         "build:cjs": "nx run-many --t=build-cjs && node scripts/move-cjs-to-dist.js",
         "build:ci": "nx run-many --t=build",
         "build:pipeline": "npm run build:esm && npm run build:cjs",
