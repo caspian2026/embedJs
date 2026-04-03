@@ -9,10 +9,20 @@
             "executor": "@nx/js:tsc",
             "outputs": ["{options.outputPath}"],
             "options": {
-                "outputPath": "dist/embedjs-openai",
+                "outputPath": "dist/esm/embedjs-openai",
                 "main": "models/embedjs-openai/src/index.ts",
-                "tsConfig": "models/embedjs-openai/tsconfig.json",
+                "tsConfig": "models/embedjs-openai/tsconfig.lib.json",
                 "assets": ["models/embedjs-openai/*.md"]
+            }
+        },
+        "build-cjs": {
+            "executor": "@nx/js:tsc",
+            "outputs": ["{options.outputPath}"],
+            "dependsOn": ["^build-cjs"],
+            "options": {
+                "outputPath": "dist/cjs/embedjs-openai",
+                "main": "models/embedjs-openai/src/index.ts",
+                "tsConfig": "models/embedjs-openai/tsconfig.cjs.json"
             }
         }
     }

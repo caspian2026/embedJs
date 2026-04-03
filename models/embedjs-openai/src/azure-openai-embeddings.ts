@@ -1,10 +1,13 @@
 import { AzureOpenAIEmbeddings as LangchainAzureOpenAiEmbeddings } from '@langchain/openai';
-import { BaseEmbeddings } from '@llm-tools/embedjs-interfaces';
+import { BaseEmbeddings } from '@cherrystudio/embedjs-interfaces';
 
 export class AzureOpenAiEmbeddings extends BaseEmbeddings {
     private model: LangchainAzureOpenAiEmbeddings;
 
-    constructor(private readonly configuration?: ConstructorParameters<typeof LangchainAzureOpenAiEmbeddings>[0]) {
+    constructor(
+        private readonly configuration?: ConstructorParameters<typeof LangchainAzureOpenAiEmbeddings>[0],
+        private readonly options?: ConstructorParameters<typeof LangchainAzureOpenAiEmbeddings>[1]
+    ) {
         super();
         if (!this.configuration) this.configuration = {};
         if (!this.configuration.model) this.configuration.model = 'text-embedding-3-small';
@@ -21,7 +24,7 @@ export class AzureOpenAiEmbeddings extends BaseEmbeddings {
             }
         }
 
-        this.model = new LangchainAzureOpenAiEmbeddings(this.configuration);
+        this.model = new LangchainAzureOpenAiEmbeddings(this.configuration, this.options);
     }
 
     override async getDimensions(): Promise<number> {

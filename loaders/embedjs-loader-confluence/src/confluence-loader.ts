@@ -2,8 +2,8 @@ import { ConfluenceClient } from 'confluence.js';
 import createDebugMessages from 'debug';
 import md5 from 'md5';
 
-import { BaseLoader } from '@llm-tools/embedjs-interfaces';
-import { WebLoader } from '@llm-tools/embedjs-loader-web';
+import { BaseLoader } from '@cherrystudio/embedjs-interfaces';
+import { WebLoader } from '@cherrystudio/embedjs-loader-web';
 
 export class ConfluenceLoader extends BaseLoader<{ type: 'ConfluenceLoader' }, { version: number }> {
     private readonly debug = createDebugMessages('embedjs:loader:ConfluenceLoader');
@@ -17,7 +17,7 @@ export class ConfluenceLoader extends BaseLoader<{ type: 'ConfluenceLoader' }, {
     constructor({
         spaceName,
         confluenceBaseUrl,
-        confluenceEmail,
+        confluenceUsername,
         confluenceToken,
         chunkSize,
         chunkOverlap,
@@ -25,7 +25,7 @@ export class ConfluenceLoader extends BaseLoader<{ type: 'ConfluenceLoader' }, {
     }: {
         spaceName: string;
         confluenceBaseUrl?: string;
-        confluenceEmail?: string;
+        confluenceUsername?: string;
         confluenceToken?: string;
         chunkSize?: number;
         chunkOverlap?: number;
@@ -43,8 +43,8 @@ export class ConfluenceLoader extends BaseLoader<{ type: 'ConfluenceLoader' }, {
             host: this.confluenceBaseUrl,
             authentication: {
                 basic: {
-                    email: confluenceEmail ?? process.env.CONFLUENCE_EMAIL,
-                    apiToken: confluenceToken ?? process.env.CONFLUENCE_API_TOKEN,
+                    username: confluenceUsername ?? process.env.CONFLUENCE_USER_NAME,
+                    password: confluenceToken ?? process.env.CONFLUENCE_API_TOKEN,
                 },
             },
         });

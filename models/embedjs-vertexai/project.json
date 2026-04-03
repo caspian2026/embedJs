@@ -9,10 +9,20 @@
             "executor": "@nx/js:tsc",
             "outputs": ["{options.outputPath}"],
             "options": {
-                "outputPath": "dist/embedjs-vertexai",
+                "outputPath": "dist/esm/embedjs-vertexai",
                 "main": "models/embedjs-vertexai/src/index.ts",
-                "tsConfig": "models/embedjs-vertexai/tsconfig.json",
+                "tsConfig": "models/embedjs-vertexai/tsconfig.lib.json",
                 "assets": ["models/embedjs-vertexai/*.md"]
+            }
+        },
+        "build-cjs": {
+            "executor": "@nx/js:tsc",
+            "outputs": ["{options.outputPath}"],
+            "dependsOn": ["^build-cjs"],
+            "options": {
+                "outputPath": "dist/cjs/embedjs-vertexai",
+                "main": "models/embedjs-vertexai/src/index.ts",
+                "tsConfig": "models/embedjs-vertexai/tsconfig.cjs.json"
             }
         }
     }

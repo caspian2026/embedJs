@@ -9,10 +9,20 @@
             "executor": "@nx/js:tsc",
             "outputs": ["{options.outputPath}"],
             "options": {
-                "outputPath": "dist/embedjs-loader-csv",
+                "outputPath": "dist/esm/embedjs-loader-csv",
                 "main": "loaders/embedjs-loader-csv/src/index.ts",
-                "tsConfig": "loaders/embedjs-loader-csv/tsconfig.json",
+                "tsConfig": "loaders/embedjs-loader-csv/tsconfig.lib.json",
                 "assets": ["loaders/embedjs-loader-csv/*.md"]
+            }
+        },
+        "build-cjs": {
+            "executor": "@nx/js:tsc",
+            "outputs": ["{options.outputPath}"],
+            "dependsOn": ["^build-cjs"],
+            "options": {
+                "outputPath": "dist/cjs/embedjs-loader-csv",
+                "main": "loaders/embedjs-loader-csv/src/index.ts",
+                "tsConfig": "loaders/embedjs-loader-csv/tsconfig.cjs.json"
             }
         }
     }

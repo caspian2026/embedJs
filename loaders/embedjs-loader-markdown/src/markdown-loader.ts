@@ -1,13 +1,12 @@
 import { micromark } from 'micromark';
-import { mdxJsx } from 'micromark-extension-mdx-jsx';
 import { gfmHtml, gfm } from 'micromark-extension-gfm';
 import createDebugMessages from 'debug';
 import fs from 'node:fs';
 import md5 from 'md5';
 
-import { BaseLoader } from '@llm-tools/embedjs-interfaces';
-import { getSafe, isValidURL, streamToBuffer } from '@llm-tools/embedjs-utils';
-import { WebLoader } from '@llm-tools/embedjs-loader-web';
+import { BaseLoader } from '@cherrystudio/embedjs-interfaces';
+import { getSafe, isValidURL, streamToBuffer } from '@cherrystudio/embedjs-utils';
+import { WebLoader } from '@cherrystudio/embedjs-loader-web';
 
 export class MarkdownLoader extends BaseLoader<{ type: 'MarkdownLoader' }> {
     private readonly debug = createDebugMessages('embedjs:loader:MarkdownLoader');
@@ -35,7 +34,7 @@ export class MarkdownLoader extends BaseLoader<{ type: 'MarkdownLoader' }> {
             : await streamToBuffer(fs.createReadStream(this.filePathOrUrl));
 
         this.debug('MarkdownLoader stream created');
-        const result = micromark(buffer, { extensions: [gfm(), mdxJsx()], htmlExtensions: [gfmHtml()] });
+        const result = micromark(buffer, { extensions: [gfm()], htmlExtensions: [gfmHtml()] });
         this.debug('Markdown parsed...');
 
         const webLoader = new WebLoader({
@@ -45,7 +44,7 @@ export class MarkdownLoader extends BaseLoader<{ type: 'MarkdownLoader' }> {
         });
 
         for await (const result of await webLoader.getUnfilteredChunks()) {
-            result.pageContent = result.pageContent.replace(/[\][(){}]/g, '');
+            result.pageContent = result.pageContent.replace(/[[\](){}]/g, '');
 
             yield {
                 pageContent: result.pageContent,

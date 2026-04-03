@@ -9,10 +9,20 @@
             "executor": "@nx/js:tsc",
             "outputs": ["{options.outputPath}"],
             "options": {
-                "outputPath": "dist/embedjs-loader-youtube",
+                "outputPath": "dist/esm/embedjs-loader-youtube",
                 "main": "loaders/embedjs-loader-youtube/src/index.ts",
-                "tsConfig": "loaders/embedjs-loader-youtube/tsconfig.json",
+                "tsConfig": "loaders/embedjs-loader-youtube/tsconfig.lib.json",
                 "assets": ["loaders/embedjs-loader-youtube/*.md"]
+            }
+        },
+        "build-cjs": {
+            "executor": "@nx/js:tsc",
+            "outputs": ["{options.outputPath}"],
+            "dependsOn": ["^build-cjs"],
+            "options": {
+                "outputPath": "dist/cjs/embedjs-loader-youtube",
+                "main": "loaders/embedjs-loader-youtube/src/index.ts",
+                "tsConfig": "loaders/embedjs-loader-youtube/tsconfig.cjs.json"
             }
         }
     }

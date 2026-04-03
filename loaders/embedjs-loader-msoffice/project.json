@@ -9,10 +9,20 @@
             "executor": "@nx/js:tsc",
             "outputs": ["{options.outputPath}"],
             "options": {
-                "outputPath": "dist/embedjs-loader-msoffice",
+                "outputPath": "dist/esm/embedjs-loader-msoffice",
                 "main": "loaders/embedjs-loader-msoffice/src/index.ts",
-                "tsConfig": "loaders/embedjs-loader-msoffice/tsconfig.json",
+                "tsConfig": "loaders/embedjs-loader-msoffice/tsconfig.lib.json",
                 "assets": ["loaders/embedjs-loader-msoffice/*.md"]
+            }
+        },
+        "build-cjs": {
+            "executor": "@nx/js:tsc",
+            "outputs": ["{options.outputPath}"],
+            "dependsOn": ["^build-cjs"],
+            "options": {
+                "outputPath": "dist/cjs/embedjs-loader-msoffice",
+                "main": "loaders/embedjs-loader-msoffice/src/index.ts",
+                "tsConfig": "loaders/embedjs-loader-msoffice/tsconfig.cjs.json"
             }
         }
     }

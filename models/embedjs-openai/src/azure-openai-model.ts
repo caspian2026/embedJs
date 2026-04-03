@@ -1,7 +1,7 @@
 import createDebugMessages from 'debug';
 import { AzureChatOpenAI } from '@langchain/openai';
 import { HumanMessage, AIMessage, SystemMessage } from '@langchain/core/messages';
-import { BaseModel, ModelResponse } from '@llm-tools/embedjs-interfaces';
+import { BaseModel, ModelResponse } from '@cherrystudio/embedjs-interfaces';
 
 export class AzureOpenAi extends BaseModel {
     private readonly debug = createDebugMessages('embedjs:model:OpenAi');
@@ -23,8 +23,8 @@ export class AzureOpenAi extends BaseModel {
         return {
             result: result.content.toString(),
             tokenUse: {
-                inputTokens: (result.usage_metadata as Record<string, number>)?.input_tokens ?? 0,
-                outputTokens: (result.usage_metadata as Record<string, number>)?.output_tokens ?? 0,
+                inputTokens: result.response_metadata.tokenUsage.promptTokens,
+                outputTokens: result.response_metadata.tokenUsage.completionTokens,
             },
         };
     }
