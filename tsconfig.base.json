@@ -18,15 +18,10 @@
         "paths": {
             "@caspian2026/embedjs": ["core/embedjs/src/index.ts"],
             "@caspian2026/embedjs-anthropic": ["models/embedjs-anthropic/src/index.ts"],
-            "@caspian2026/embedjs-astra": ["databases/embedjs-astra/src/index.ts"],
             "@caspian2026/embedjs-cohere": ["models/embedjs-cohere/src/index.ts"],
-            "@caspian2026/embedjs-cosmos": ["databases/embedjs-cosmos/src/index.ts"],
-            "@caspian2026/embedjs-hnswlib": ["databases/embedjs-hnswlib/src/index.ts"],
             "@caspian2026/embedjs-huggingface": ["models/embedjs-huggingface/src/index.ts"],
             "@caspian2026/embedjs-interfaces": ["core/embedjs-interfaces/src/index.ts"],
-            "@caspian2026/embedjs-lancedb": ["databases/embedjs-lancedb/src/index.ts"],
-            "@caspian2026/embedjs-libsql": ["databases/embedjs-libsql/src/index.ts"],
-            "@caspian2026/embedjs-lmdb": ["databases/embedjs-lmdb/src/index.ts"],
+            "@caspian2026/embedjs-llama-cpp": ["models/embedjs-llama-cpp/src/index.ts"],
             "@caspian2026/embedjs-loader-confluence": ["loaders/embedjs-loader-confluence/src/index.ts"],
             "@caspian2026/embedjs-loader-csv": ["loaders/embedjs-loader-csv/src/index.ts"],
             "@caspian2026/embedjs-loader-image": ["loaders/embedjs-loader-image/src/index.ts"],
@@ -38,15 +33,10 @@
             "@caspian2026/embedjs-loader-xml": ["loaders/embedjs-loader-xml/src/index.ts"],
             "@caspian2026/embedjs-loader-youtube": ["loaders/embedjs-loader-youtube/src/index.ts"],
             "@caspian2026/embedjs-mistral": ["models/embedjs-mistral/src/index.ts"],
-            "@caspian2026/embedjs-mongodb": ["databases/embedjs-mongodb/src/index.ts"],
             "@caspian2026/embedjs-ollama": ["models/embedjs-ollama/src/index.ts"],
             "@caspian2026/embedjs-openai": ["models/embedjs-openai/src/index.ts"],
-            "@caspian2026/embedjs-pinecone": ["databases/embedjs-pinecone/src/index.ts"],
-            "@caspian2026/embedjs-qdrant": ["databases/embedjs-qdrant/src/index.ts"],
-            "@caspian2026/embedjs-redis": ["databases/embedjs-redis/src/index.ts"],
             "@caspian2026/embedjs-utils": ["core/embedjs-utils/src/index.ts"],
-            "@caspian2026/embedjs-vertexai": ["models/embedjs-vertexai/src/index.ts"],
-            "@caspian2026/embedjs-weaviate": ["databases/embedjs-weaviate/src/index.ts"]
+            "@caspian2026/embedjs-vertexai": ["models/embedjs-vertexai/src/index.ts"]
         }
     },
     "exclude": ["node_modules", "tmp"]

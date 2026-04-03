@@ -7,13 +7,11 @@
         "url": "https://github.com/caspian2026/embedJs/issues"
     },
     "homepage": "https://github.com/caspian2026/embedJs#readme",
-    "version": "0.1.34",
+    "version": "0.1.37",
     "scripts": {
+        "build": "nx run-many --t=build --exclude='examples/*'",
         "build:esm": "nx run-many --t=build --exclude='examples/*'",
-        "build:cjs": "nx run-many --t=build-cjs && node scripts/move-cjs-to-dist.js",
-        "build:ci": "nx run-many --t=build",
-        "build:pipeline": "npm run build:esm && npm run build:cjs",
-        "deploy": "node scripts/publish-via-nx.js"
+        "build:cjs": "nx run-many --t=build-cjs"
     },
     "license": "Apache-2.0",
     "devDependencies": {
@@ -47,7 +45,6 @@
     },
     "workspaces": [
         "core/*",
-        "databases/*",
         "loaders/*",
         "models/*"
     ],

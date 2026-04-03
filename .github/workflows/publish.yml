@@ -1,7 +1,6 @@
 name: Publish
 
 on:
-    #When a new release is published
     release:
         types: [published]
 
@@ -9,13 +8,13 @@ env:
     NX_CLOUD_ACCESS_TOKEN: ${{ secrets.NX_CLOUD_ACCESS_TOKEN }}
 
 jobs:
-    test:
+    publish:
         name: Publish
         runs-on: ubuntu-latest
         permissions:
             contents: read
-            id-token: write # needed for provenance data generation
-        timeout-minutes: 10
+            id-token: write
+        timeout-minutes: 15
         steps:
             - name: Checkout repository
               uses: actions/checkout@v4
@@ -29,18 +28,13 @@ jobs:
                   registry-url: https://registry.npmjs.org/
 
             - name: Install dependencies
-              run: npm ci
+              run: npm install
 
-            - name: Print Environment Info
-              run: npx nx report
-              shell: bash
+            - name: Build packages
+              run: npm run build:esm
 
             - name: Publish packages
-              run: |
-                  VERSION=${{ github.ref_name }}
-                  echo 'Publishing version' $VERSION
-                  node scripts/publish-via-nx.js --ci --version $VERSION
-                  npx nx release publish
+              run: npx nx release publish
               shell: bash
               env:
                   NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
