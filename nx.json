@@ -21,7 +21,7 @@
             }
         },
         "version": {
-            "preVersionCommand": "npm run build:pipeline",
+            "preVersionCommand": "npm run build:esm",
             "generatorOptions": {
                 "currentVersionResolver": "registry",
                 "fallbackCurrentVersionResolver": "github",

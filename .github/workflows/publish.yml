@@ -34,7 +34,7 @@ jobs:
               run: npm run build:esm
 
             - name: Publish packages
-              run: npx nx release publish
+              run: npx nx release publish --ver=${{ github.ref_name }}
               shell: bash
               env:
                   NODE_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
