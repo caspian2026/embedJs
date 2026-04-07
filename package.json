@@ -7,7 +7,7 @@
         "url": "https://github.com/caspian2026/embedJs/issues"
     },
     "homepage": "https://github.com/caspian2026/embedJs#readme",
-    "version": "0.1.37",
+    "version": "0.1.38",
     "scripts": {
         "build": "nx run-many --t=build --exclude='examples/*'",
         "build:esm": "nx run-many --t=build --exclude='examples/*'",

@@ -1,9 +1,9 @@
 {
     "name": "@caspian2026/embedjs-cohere",
-    "version": "0.1.37",
+    "version": "0.1.38",
     "description": "Enable usage of Cohere models with embedjs",
     "dependencies": {
-        "@caspian2026/embedjs-interfaces": "0.1.37",
+        "@caspian2026/embedjs-interfaces": "0.1.38",
         "@langchain/cohere": "^0.3.2",
         "cohere-ai": "^7.15.0"
     },
