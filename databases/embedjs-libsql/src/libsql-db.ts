@@ -17,7 +17,7 @@ export class LibSqlDb implements BaseVectorDatabase {
     }
 
     async init({ dimensions }: { dimensions: number }) {
-        const vectorColumnType = dimensions ? `F32_BLOB(${dimensions})` : 'F32_BLOB';
+        const vectorColumnType = dimensions ? `F32_BLOB(${dimensions})` : 'F32_BLOB(1536)';
         await this.client.execute(`CREATE TABLE IF NOT EXISTS ${this.tableName} (
             id              TEXT PRIMARY KEY,
             pageContent     TEXT UNIQUE,

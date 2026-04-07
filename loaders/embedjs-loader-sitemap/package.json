@@ -1,10 +1,10 @@
 {
     "name": "@caspian2026/embedjs-loader-sitemap",
-    "version": "0.1.39",
+    "version": "0.1.40",
     "description": "Sitemap recursive loader for embedjs",
     "dependencies": {
-        "@caspian2026/embedjs-interfaces": "0.1.39",
-        "@caspian2026/embedjs-loader-web": "0.1.39",
+        "@caspian2026/embedjs-interfaces": "0.1.40",
+        "@caspian2026/embedjs-loader-web": "0.1.40",
         "debug": "^4.4.0",
         "md5": "^2.3.0",
         "sitemapper": "^3.2.20"

@@ -1,10 +1,10 @@
 {
     "name": "@caspian2026/embedjs-loader-csv",
-    "version": "0.1.39",
+    "version": "0.1.40",
     "description": "CSV loader for embedjs",
     "dependencies": {
-        "@caspian2026/embedjs-interfaces": "0.1.39",
-        "@caspian2026/embedjs-utils": "0.1.39",
+        "@caspian2026/embedjs-interfaces": "0.1.40",
+        "@caspian2026/embedjs-utils": "0.1.40",
         "csv-parse": "^5.6.0",
         "debug": "^4.4.0",
         "md5": "^2.3.0"

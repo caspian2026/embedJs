@@ -1,9 +1,9 @@
 {
     "name": "@caspian2026/embedjs-weaviate",
-    "version": "0.1.39",
+    "version": "0.1.40",
     "description": "Add Weaviate support to embedjs",
     "dependencies": {
-        "@caspian2026/embedjs-interfaces": "0.1.39",
+        "@caspian2026/embedjs-interfaces": "0.1.40",
         "compute-cosine-similarity": "^1.1.0",
         "debug": "^4.4.0",
         "weaviate-ts-client": "^2.2.0"

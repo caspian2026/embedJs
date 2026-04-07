@@ -1,9 +1,9 @@
 {
     "name": "@caspian2026/embedjs-ollama",
-    "version": "0.1.39",
+    "version": "0.1.40",
     "description": "Enable usage of Ollama with embedjs",
     "dependencies": {
-        "@caspian2026/embedjs-interfaces": "0.1.39",
+        "@caspian2026/embedjs-interfaces": "0.1.40",
         "@langchain/core": "^0.3.26",
         "@langchain/ollama": "^0.1.4",
         "debug": "^4.4.0"

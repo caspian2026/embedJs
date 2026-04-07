@@ -1,9 +1,9 @@
 {
     "name": "@caspian2026/embedjs-redis",
-    "version": "0.1.39",
+    "version": "0.1.40",
     "description": "Add Redis support to embedjs",
     "dependencies": {
-        "@caspian2026/embedjs-interfaces": "0.1.39",
+        "@caspian2026/embedjs-interfaces": "0.1.40",
         "ioredis": "^5.4.2"
     },
     "type": "module",
