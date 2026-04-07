@@ -1,5 +1,5 @@
 {
-    "name": "@cherrystudio/embedjs-interfaces",
+    "name": "@caspian2026/embedjs-interfaces",
     "version": "0.1.34",
     "description": "Interfaces for extending the embedjs ecosystem",
     "dependencies": {

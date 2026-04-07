@@ -1,9 +1,9 @@
 {
-    "name": "@cherrystudio/embedjs-hnswlib",
+    "name": "@caspian2026/embedjs-hnswlib",
     "version": "0.1.34",
     "description": "Add HNSWLib support to embedjs",
     "dependencies": {
-        "@cherrystudio/embedjs-interfaces": "0.1.34",
+        "@caspian2026/embedjs-interfaces": "0.1.34",
         "debug": "^4.4.0",
         "hnswlib-node": "^3.0.0"
     },

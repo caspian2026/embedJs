@@ -5,7 +5,7 @@ import {
     BaseLoader,
     BaseModel,
     SIMPLE_MODELS,
-} from '@cherrystudio/embedjs-interfaces';
+} from '@caspian2026/embedjs-interfaces';
 import { MemoryStore } from '../store/memory-store.js';
 import { RAGApplication } from './rag-application.js';
 

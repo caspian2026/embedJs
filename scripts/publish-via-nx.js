@@ -86,7 +86,7 @@ async function createRelease(dryRun, version, makeGitCommit) {
     const versionMap = new Map();
     console.log('Computing nx release version map');
     for (const [pkgName, { newVersion }] of Object.entries(projectsVersionData)) {
-        versionMap.set(`@cherrystudio/${pkgName}`, newVersion);
+        versionMap.set(`@caspian2026/${pkgName}`, newVersion);
     }
 
     console.log('Updating projects actual version to match NX computed values');

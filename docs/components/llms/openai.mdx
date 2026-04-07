@@ -15,14 +15,14 @@ OPENAI_API_KEY="<Your key>"
 ## Install OpenAI addon
 
 ```bash
-npm install @cherrystudio/embedjs-openai
+npm install @caspian2026/embedjs-openai
 ```
 
 ## Usage
 
 ```ts
-import { RAGApplicationBuilder } from '@cherrystudio/embedjs';
-import { OpenAi } from '@cherrystudio/embedjs-openai';
+import { RAGApplicationBuilder } from '@caspian2026/embedjs';
+import { OpenAi } from '@caspian2026/embedjs-openai';
 
 const app = await new RAGApplicationBuilder()
 .setModel(new OpenAi({ model: "text-davinci-003" }))

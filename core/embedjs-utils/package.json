@@ -1,9 +1,9 @@
 {
-    "name": "@cherrystudio/embedjs-utils",
+    "name": "@caspian2026/embedjs-utils",
     "version": "0.1.34",
     "description": "Useful util functions when extending the embedjs ecosystem",
     "dependencies": {
-        "@cherrystudio/embedjs-interfaces": "0.1.34"
+        "@caspian2026/embedjs-interfaces": "0.1.34"
     },
     "type": "module",
     "main": "./src/index.js",

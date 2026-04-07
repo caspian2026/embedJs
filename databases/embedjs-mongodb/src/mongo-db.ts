@@ -1,7 +1,7 @@
 import { Collection, MongoClient } from 'mongodb';
 import createDebugMessages from 'debug';
 
-import { BaseVectorDatabase, ExtractChunkData, InsertChunkData } from '@cherrystudio/embedjs-interfaces';
+import { BaseVectorDatabase, ExtractChunkData, InsertChunkData } from '@caspian2026/embedjs-interfaces';
 
 export class MongoDb implements BaseVectorDatabase {
     private readonly debug = createDebugMessages('embedjs:vector:MongoDb');

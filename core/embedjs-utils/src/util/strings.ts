@@ -1,4 +1,4 @@
-import { Message } from '@cherrystudio/embedjs-interfaces';
+import { Message } from '@caspian2026/embedjs-interfaces';
 
 export function truncateCenterString(fullStr: string, strLen: number, separator?: string) {
     if (fullStr.length <= strLen) return fullStr;

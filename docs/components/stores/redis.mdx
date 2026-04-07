@@ -7,14 +7,14 @@ You can use redis as a data store.
 ## Install Redis addon
 
 ```bash
-npm install @cherrystudio/embedjs-redis
+npm install @caspian2026/embedjs-redis
 ```
 
 ## Usage
 <CodeGroup>
 ```ts Partial example
-import { RAGApplicationBuilder } from '@cherrystudio/embedjs';
-import { RedisStore } from '@cherrystudio/embedjs-redis';
+import { RAGApplicationBuilder } from '@caspian2026/embedjs';
+import { RedisStore } from '@caspian2026/embedjs-redis';
 
 const app = await new RAGApplicationBuilder()
 .setStore(new RedisStore({ ... }))

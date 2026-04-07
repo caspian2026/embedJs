@@ -38,7 +38,7 @@
     ],
     "topbarCtaButton": {
         "name": "Install",
-        "url": "https://www.npmjs.com/package/@cherrystudio/embedjs"
+        "url": "https://www.npmjs.com/package/@caspian2026/embedjs"
     },
     "primaryTab": {
         "name": "📘 Documentation"

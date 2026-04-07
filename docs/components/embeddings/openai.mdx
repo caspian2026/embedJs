@@ -15,15 +15,15 @@ OPENAI_API_KEY="<Your key>"
 ## Install OpenAI addon
 
 ```bash
-npm install @cherrystudio/embedjs-openai
+npm install @caspian2026/embedjs-openai
 ```
 
 ## Usage
 
 ```ts
-import { RAGApplicationBuilder } from '@cherrystudio/embedjs';
-import { OpenAiEmbeddings } from '@cherrystudio/embedjs-openai';
-import { HNSWDb } from '@cherrystudio/embedjs-hnswlib';
+import { RAGApplicationBuilder } from '@caspian2026/embedjs';
+import { OpenAiEmbeddings } from '@caspian2026/embedjs-openai';
+import { HNSWDb } from '@caspian2026/embedjs-hnswlib';
 
 const app = await new RAGApplicationBuilder()
 .setEmbeddingModel(new OpenAiEmbeddings({

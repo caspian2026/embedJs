@@ -1,5 +1,5 @@
 import { OllamaEmbeddings as OllamaEmbedding, OllamaInput } from '@langchain/ollama';
-import { BaseEmbeddings } from '@cherrystudio/embedjs-interfaces';
+import { BaseEmbeddings } from '@caspian2026/embedjs-interfaces';
 
 export class OllamaEmbeddings extends BaseEmbeddings {
     private model: OllamaEmbedding;

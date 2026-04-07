@@ -11,14 +11,14 @@ MongoDB is also supported as a vector database. This is separate from that.
 ## Install MongoDB addon
 
 ```bash
-npm install @cherrystudio/embedjs-mongodb
+npm install @caspian2026/embedjs-mongodb
 ```
 
 ## Usage
 <CodeGroup>
 ```ts Partial example
-import { RAGApplicationBuilder } from '@cherrystudio/embedjs';
-import { MongoStore } from '@cherrystudio/embedjs-mongodb';
+import { RAGApplicationBuilder } from '@caspian2026/embedjs';
+import { MongoStore } from '@caspian2026/embedjs-mongodb';
 
 const app = await new RAGApplicationBuilder()
 .setStore(new MongoStore({ ... }))

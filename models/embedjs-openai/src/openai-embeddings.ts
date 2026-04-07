@@ -1,5 +1,5 @@
 import { OpenAIEmbeddings } from '@langchain/openai';
-import { BaseEmbeddings } from '@cherrystudio/embedjs-interfaces';
+import { BaseEmbeddings } from '@caspian2026/embedjs-interfaces';
 
 export class OpenAiEmbeddings extends BaseEmbeddings {
     private model: OpenAIEmbeddings;

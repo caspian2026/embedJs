@@ -8,7 +8,7 @@ description: '💡 Create an AI app on your own data in a minute'
 First install the NodeJs package:
 
 ```bash
-npm i @cherrystudio/embedjs
+npm i @caspian2026/embedjs
 ```
 
 Once you have installed the package, depending upon your preference you can either use:
@@ -34,10 +34,10 @@ These models are free and can be run locally using Ollama.
 
 <CodeGroup>
 ```ts ollama_demo.ts
-import { RAGApplicationBuilder } from '@cherrystudio/embedjs';
-import { OllamaEmbeddings, Ollama } from '@cherrystudio/embedjs-ollama';
-import { WebLoader } from '@cherrystudio/embedjs-loader-web';
-import { HNSWDb } from '@cherrystudio/embedjs-hnswlib';
+import { RAGApplicationBuilder } from '@caspian2026/embedjs';
+import { OllamaEmbeddings, Ollama } from '@caspian2026/embedjs-ollama';
+import { WebLoader } from '@caspian2026/embedjs-loader-web';
+import { HNSWDb } from '@caspian2026/embedjs-hnswlib';
 
 const ragApplication = await new RAGApplicationBuilder()
 .setModel(new Ollama({ modelName: "llama3.2", baseUrl: 'http://localhost:11434' }))
@@ -63,10 +63,10 @@ In this section, we will use both an LLM and embedding model from OpenAI.
 
 <CodeGroup>
 ```ts openai_demo.ts
-import { RAGApplicationBuilder, SIMPLE_MODELS } from '@cherrystudio/embedjs';
-import { OpenAiEmbeddings } from '@cherrystudio/embedjs-openai';
-import { WebLoader } from '@cherrystudio/embedjs-loader-web';
-import { HNSWDb } from '@cherrystudio/embedjs-hnswlib';
+import { RAGApplicationBuilder, SIMPLE_MODELS } from '@caspian2026/embedjs';
+import { OpenAiEmbeddings } from '@caspian2026/embedjs-openai';
+import { WebLoader } from '@caspian2026/embedjs-loader-web';
+import { HNSWDb } from '@caspian2026/embedjs-hnswlib';
 
 //Replace this with your OpenAI key
 process.env.OPENAI_API_KEY = "sk-xxxx"

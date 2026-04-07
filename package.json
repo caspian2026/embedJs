@@ -1,6 +1,6 @@
 {
     "type": "module",
-    "name": "@cherrystudio/embedjs-source",
+    "name": "@caspian2026/embedjs-source",
     "description": "A NodeJS RAG framework to easily work with LLMs and custom datasets",
     "author": "K V Adhityan",
     "bugs": {
