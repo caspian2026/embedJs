@@ -1,8 +1,8 @@
 import 'dotenv/config';
-import { RAGApplicationBuilder } from '@caspian2026/embedjs';
-import { OpenAiEmbeddings } from '@caspian2026/embedjs-openai';
-import { WebLoader } from '@caspian2026/embedjs-loader-web';
-import { PineconeDb } from '@caspian2026/embedjs-pinecone';
+import { RAGApplicationBuilder } from '@cherrystudio/embedjs';
+import { OpenAiEmbeddings } from '@cherrystudio/embedjs-openai';
+import { WebLoader } from '@cherrystudio/embedjs-loader-web';
+import { PineconeDb } from '@cherrystudio/embedjs-pinecone';
 
 const llmApplication = await new RAGApplicationBuilder()
     .setEmbeddingModel(new OpenAiEmbeddings())

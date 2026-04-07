@@ -1,7 +1,7 @@
 import 'dotenv/config';
-import { LocalPathLoader, RAGApplicationBuilder } from '@caspian2026/embedjs';
-import { OpenAi, OpenAiEmbeddings } from '@caspian2026/embedjs-openai';
-import { HNSWDb } from '@caspian2026/embedjs-hnswlib';
+import { LocalPathLoader, RAGApplicationBuilder } from '@cherrystudio/embedjs';
+import { OpenAi, OpenAiEmbeddings } from '@cherrystudio/embedjs-openai';
+import { HNSWDb } from '@cherrystudio/embedjs-hnswlib';
 
 const llmApplication = await new RAGApplicationBuilder()
     .setModel(new OpenAi({ modelName: 'gpt-4o' }))

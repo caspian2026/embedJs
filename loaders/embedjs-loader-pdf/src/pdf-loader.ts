@@ -2,8 +2,8 @@ import { RecursiveCharacterTextSplitter } from '@langchain/textsplitters';
 import { getTextExtractor } from 'office-text-extractor';
 import md5 from 'md5';
 
-import { BaseLoader } from '@caspian2026/embedjs-interfaces';
-import { isValidURL, cleanString } from '@caspian2026/embedjs-utils';
+import { BaseLoader } from '@cherrystudio/embedjs-interfaces';
+import { isValidURL, cleanString } from '@cherrystudio/embedjs-utils';
 
 export class PdfLoader extends BaseLoader<{ type: 'PdfLoader' }> {
     private readonly filePathOrUrl: string;

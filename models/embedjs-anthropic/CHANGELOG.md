@@ -10,19 +10,19 @@ This was a version bump only for embedjs-anthropic to align it with other projec
 
 ### 🚀 Features
 
--   added markdown/mdx loader ([847947d](https://github.com/caspian2026/embedJs/commit/847947d)
+-   added markdown/mdx loader ([847947d](https://github.com/CherryHQ/embed-js/commit/847947d)
 
 ## 0.1.16 (2024-11-04)
 
 ### 🚀 Features
 
--   added xml loader ([9172511](https://github.com/caspian2026/embedJs/commit/9172511))
+-   added xml loader ([9172511](https://github.com/CherryHQ/embed-js/commit/9172511))
 
 ## 0.1.15 and 0.1.14 (2024-11-01)
 
 ### 🚀 Features
 
--   refactored caches into stores ([5aec5ed](https://github.com/caspian2026/embedJs/commit/5aec5ed))
+-   refactored caches into stores ([5aec5ed](https://github.com/CherryHQ/embed-js/commit/5aec5ed))
 
 ## 0.1.13 (2024-10-30)
 
@@ -56,21 +56,21 @@ This was a version bump only for embedjs-anthropic to align it with other projec
 
 ### 🩹 Fixes
 
--   minor changelog double lines removed ([7e3509a](https://github.com/caspian2026/embedJs/commit/7e3509a))
+-   minor changelog double lines removed ([7e3509a](https://github.com/CherryHQ/embed-js/commit/7e3509a))
 
 ## 0.1.4 (2024-10-09)
 
 ### 🚀 Features
 
--   new doc website + merged conversations with cache ([28d918a](https://github.com/caspian2026/embedJs/commit/28d918a))
+-   new doc website + merged conversations with cache ([28d918a](https://github.com/CherryHQ/embed-js/commit/28d918a))
 
 ### 🩹 Fixes
 
--   remove changelog generation from github release ([87abd2b](https://github.com/caspian2026/embedJs/commit/87abd2b))
+-   remove changelog generation from github release ([87abd2b](https://github.com/CherryHQ/embed-js/commit/87abd2b))
 
--   remove changelog generation from github release ([4aa3f18](https://github.com/caspian2026/embedJs/commit/4aa3f18))
+-   remove changelog generation from github release ([4aa3f18](https://github.com/CherryHQ/embed-js/commit/4aa3f18))
 
--   capitalization on contributing.md ([0381453](https://github.com/caspian2026/embedJs/commit/0381453))
+-   capitalization on contributing.md ([0381453](https://github.com/CherryHQ/embed-js/commit/0381453))
 
 ## 0.1.3 (2024-10-06)
 
@@ -80,13 +80,13 @@ SIMPLE_MODEL enum is back. Now you can configure a model by passing in this enum
 
 ### 🚀 Features
 
--   readded local-path and url loaders ([303133c](https://github.com/caspian2026/embedJs/commit/303133c))
+-   readded local-path and url loaders ([303133c](https://github.com/CherryHQ/embed-js/commit/303133c))
 
 ### 🩹 Fixes
 
--   exclude examples from release process ([1382185](https://github.com/caspian2026/embedJs/commit/1382185))
+-   exclude examples from release process ([1382185](https://github.com/CherryHQ/embed-js/commit/1382185))
 
--   downgrade esbuild version to match nx requirements ([183308f](https://github.com/caspian2026/embedJs/commit/183308f))
+-   downgrade esbuild version to match nx requirements ([183308f](https://github.com/CherryHQ/embed-js/commit/183308f))
 
 ## 0.1.1 (2024-10-04)
 

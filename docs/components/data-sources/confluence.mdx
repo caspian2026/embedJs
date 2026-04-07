@@ -7,16 +7,16 @@ You can load all pages from a Confluence space using the `ConfluenceLoader`.
 ## Install Confluence addon
 
 ```bash
-npm install @caspian2026/embedjs-loader-confluence
+npm install @cherrystudio/embedjs-loader-confluence
 ```
 
 ## Usage
 
 ```ts
-import { RAGApplicationBuilder } from '@caspian2026/embedjs';
-import { OpenAiEmbeddings } from '@caspian2026/embedjs-openai';
-import { HNSWDb } from '@caspian2026/embedjs-hnswlib';
-import { ConfluenceLoader } from '@caspian2026/embedjs-loader-confluence';
+import { RAGApplicationBuilder } from '@cherrystudio/embedjs';
+import { OpenAiEmbeddings } from '@cherrystudio/embedjs-openai';
+import { HNSWDb } from '@cherrystudio/embedjs-hnswlib';
+import { ConfluenceLoader } from '@cherrystudio/embedjs-loader-confluence';
 
 const app = await new RAGApplicationBuilder()
 .setModel(SIMPLE_MODELS.OPENAI_GPT4_O)

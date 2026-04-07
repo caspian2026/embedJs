@@ -4,9 +4,9 @@ import createDebugMessages from 'debug';
 import fs from 'node:fs';
 import md5 from 'md5';
 
-import { BaseLoader } from '@caspian2026/embedjs-interfaces';
-import { getSafe, isValidURL, streamToBuffer } from '@caspian2026/embedjs-utils';
-import { WebLoader } from '@caspian2026/embedjs-loader-web';
+import { BaseLoader } from '@cherrystudio/embedjs-interfaces';
+import { getSafe, isValidURL, streamToBuffer } from '@cherrystudio/embedjs-utils';
+import { WebLoader } from '@cherrystudio/embedjs-loader-web';
 
 export class MarkdownLoader extends BaseLoader<{ type: 'MarkdownLoader' }> {
     private readonly debug = createDebugMessages('embedjs:loader:MarkdownLoader');

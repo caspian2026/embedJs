@@ -1,7 +1,7 @@
 import createDebugMessages from 'debug';
 import { ChatMistralAI } from '@langchain/mistralai';
 import { AIMessage, HumanMessage, SystemMessage } from '@langchain/core/messages';
-import { BaseModel, ModelResponse } from '@caspian2026/embedjs-interfaces';
+import { BaseModel, ModelResponse } from '@cherrystudio/embedjs-interfaces';
 
 export class Mistral extends BaseModel {
     private readonly debug = createDebugMessages('embedjs:model:Mistral');

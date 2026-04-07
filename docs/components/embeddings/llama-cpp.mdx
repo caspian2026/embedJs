@@ -7,14 +7,14 @@ EmbedJs supports local embeddings via `LlamaCpp`.
 ## Install LlamaCpp addon
 
 ```bash
-npm install @caspian2026/embedjs-llama-cpp
+npm install @cherrystudio/embedjs-llama-cpp
 ```
 
 ## Usage
 
 ```ts
-import { RAGApplicationBuilder } from '@caspian2026/embedjs';
-import { LlamaCppEmbeddings } from '@caspian2026/embedjs-llama-cpp';
+import { RAGApplicationBuilder } from '@cherrystudio/embedjs';
+import { LlamaCppEmbeddings } from '@cherrystudio/embedjs-llama-cpp';
 
 const app = await new RAGApplicationBuilder()
 .setEmbeddingModel(new LlamaCppEmbeddings({

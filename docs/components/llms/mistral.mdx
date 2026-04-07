@@ -7,14 +7,14 @@ To use Mirstal's models, you will need to get an API Key from Mistral. You can d
 ## Install Mistral addon
 
 ```bash
-npm install @caspian2026/embedjs-mistral
+npm install @cherrystudio/embedjs-mistral
 ```
 
 ## Usage
 
 ```ts
-import { RAGApplicationBuilder } from '@caspian2026/embedjs';
-import { Anthropic } from '@caspian2026/embedjs-mistral';
+import { RAGApplicationBuilder } from '@cherrystudio/embedjs';
+import { Anthropic } from '@cherrystudio/embedjs-mistral';
 
 const app = await new RAGApplicationBuilder()
 .setModel(new Mistral({ accessToken: "<YOUR_MISTRAL_TOKEN_HERE>", modelName: "..." }))

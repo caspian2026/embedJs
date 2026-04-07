@@ -12,14 +12,14 @@ ANTHROPIC_API_KEY="<Your key>"
 ## Install Anthtopic addon
 
 ```bash
-npm install @caspian2026/embedjs-anthropic
+npm install @cherrystudio/embedjs-anthropic
 ```
 
 ## Usage
 
 ```ts
-import { RAGApplicationBuilder } from '@caspian2026/embedjs';
-import { Anthropic } from '@caspian2026/embedjs-anthropic';
+import { RAGApplicationBuilder } from '@cherrystudio/embedjs';
+import { Anthropic } from '@cherrystudio/embedjs-anthropic';
 
 const app = await new RAGApplicationBuilder()
 .setModel(new Anthropic({ modelName: "..." }))

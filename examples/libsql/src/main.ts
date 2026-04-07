@@ -1,9 +1,9 @@
 import 'dotenv/config';
 import path from 'node:path';
-import { RAGApplicationBuilder, SIMPLE_MODELS } from '@caspian2026/embedjs';
-import { LibSqlDb, LibSqlStore } from '@caspian2026/embedjs-libsql';
-import { OpenAiEmbeddings } from '@caspian2026/embedjs-openai';
-import { WebLoader } from '@caspian2026/embedjs-loader-web';
+import { RAGApplicationBuilder, SIMPLE_MODELS } from '@cherrystudio/embedjs';
+import { LibSqlDb, LibSqlStore } from '@cherrystudio/embedjs-libsql';
+import { OpenAiEmbeddings } from '@cherrystudio/embedjs-openai';
+import { WebLoader } from '@cherrystudio/embedjs-loader-web';
 
 const databasePath = path.resolve('./examples/libsql/data.db');
 const ragApplication = await new RAGApplicationBuilder()
