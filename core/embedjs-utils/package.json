@@ -1,9 +1,9 @@
 {
     "name": "@caspian2026/embedjs-utils",
-    "version": "0.1.40",
+    "version": "0.1.41",
     "description": "Useful util functions when extending the embedjs ecosystem",
     "dependencies": {
-        "@caspian2026/embedjs-interfaces": "0.1.40"
+        "@caspian2026/embedjs-interfaces": "0.1.41"
     },
     "type": "module",
     "main": "./src/index.js",

@@ -1,10 +1,10 @@
 {
     "name": "@caspian2026/embedjs-loader-web",
-    "version": "0.1.40",
+    "version": "0.1.41",
     "description": "Web page loader for embedjs",
     "dependencies": {
-        "@caspian2026/embedjs-interfaces": "0.1.40",
-        "@caspian2026/embedjs-utils": "0.1.40",
+        "@caspian2026/embedjs-interfaces": "0.1.41",
+        "@caspian2026/embedjs-utils": "0.1.41",
         "@langchain/textsplitters": "^0.1.0",
         "debug": "^4.4.0",
         "html-to-text": "^9.0.5",

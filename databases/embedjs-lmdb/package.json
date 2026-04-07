@@ -1,9 +1,9 @@
 {
     "name": "@caspian2026/embedjs-lmdb",
-    "version": "0.1.40",
+    "version": "0.1.41",
     "description": "Add LMDB support to embedjs",
     "dependencies": {
-        "@caspian2026/embedjs-interfaces": "0.1.40",
+        "@caspian2026/embedjs-interfaces": "0.1.41",
         "debug": "^4.4.0",
         "lmdb": "^3.2.0"
     },

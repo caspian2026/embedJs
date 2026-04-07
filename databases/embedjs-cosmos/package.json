@@ -1,10 +1,10 @@
 {
     "name": "@caspian2026/embedjs-cosmos",
-    "version": "0.1.40",
+    "version": "0.1.41",
     "description": "Add CosmosDB support to embedjs",
     "dependencies": {
         "@azure/cosmos": "^4.2.0",
-        "@caspian2026/embedjs-interfaces": "0.1.40",
+        "@caspian2026/embedjs-interfaces": "0.1.41",
         "debug": "^4.4.0"
     },
     "type": "module",

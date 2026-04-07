@@ -1,9 +1,9 @@
 {
     "name": "@caspian2026/embedjs-astradb",
-    "version": "0.1.40",
+    "version": "0.1.41",
     "description": "Add AstraDB support to embedjs",
     "dependencies": {
-        "@caspian2026/embedjs-interfaces": "0.1.40",
+        "@caspian2026/embedjs-interfaces": "0.1.41",
         "@datastax/astra-db-ts": "^1.5.0",
         "debug": "^4.4.0"
     },

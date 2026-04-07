@@ -9,23 +9,20 @@ export class OpenAiEmbeddings extends BaseEmbeddings {
         if (!this.configuration) this.configuration = {};
         if (!this.configuration.model) this.configuration.model = 'text-embedding-3-small';
 
-        if (!this.configuration.dimensions) {
-            if (this.configuration.model === 'text-embedding-3-small') {
-                this.configuration.dimensions = 1536;
-            } else if (this.configuration.model === 'text-embedding-3-large') {
-                this.configuration.dimensions = 3072;
-            } else if (this.configuration.model === 'text-embedding-ada-002') {
-                this.configuration.dimensions = 1536;
-            } else {
-                throw new Error('You need to pass in the optional dimensions parameter for this model');
-            }
-        }
-
         this.model = new OpenAIEmbeddings(this.configuration);
     }
 
     override async getDimensions(): Promise<number> {
-        return this.configuration.dimensions;
+        if (this.configuration.dimensions) return this.configuration.dimensions;
+
+        const model = this.configuration.model;
+        if (model === 'text-embedding-3-small') return 1536;
+        if (model === 'text-embedding-3-large') return 3072;
+        if (model === 'text-embedding-ada-002') return 1536;
+
+        // Dynamic fallback: embed a sample to determine dimensions
+        const sample = await this.model.embedQuery('sample');
+        return sample.length;
     }
 
     override async embedDocuments(texts: string[]): Promise<number[][]> {

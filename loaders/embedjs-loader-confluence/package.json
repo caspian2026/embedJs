@@ -1,10 +1,10 @@
 {
     "name": "@caspian2026/embedjs-loader-confluence",
-    "version": "0.1.40",
+    "version": "0.1.41",
     "description": "Confluence loader for embedjs",
     "dependencies": {
-        "@caspian2026/embedjs-interfaces": "0.1.40",
-        "@caspian2026/embedjs-loader-web": "0.1.40",
+        "@caspian2026/embedjs-interfaces": "0.1.41",
+        "@caspian2026/embedjs-loader-web": "0.1.41",
         "confluence.js": "^1.7.4",
         "debug": "^4.4.0",
         "md5": "^2.3.0"

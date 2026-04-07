@@ -1,9 +1,9 @@
 {
     "name": "@caspian2026/embedjs-pinecone",
-    "version": "0.1.40",
+    "version": "0.1.41",
     "description": "Add Pinecone support to embedjs",
     "dependencies": {
-        "@caspian2026/embedjs-interfaces": "0.1.40",
+        "@caspian2026/embedjs-interfaces": "0.1.41",
         "@pinecone-database/pinecone": "^4.0.0",
         "debug": "^4.4.0"
     },
